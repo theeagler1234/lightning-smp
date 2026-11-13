@@ -1,0 +1,70 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:chiseled_sulfur": 2,
+      "minecraft:waxed_weathered_copper_bulb": 46,
+      "minecraft:wind_charge": 23,
+      "minecraft:netherite_sword": 3,
+      "minecraft:horse_spawn_egg": 2,
+      "minecraft:sulfur_cube_spawn_egg": 1,
+      "minecraft:tnt": 13,
+      "minecraft:mace": 36,
+      "minecraft:flint_and_steel": 13,
+      "minecraft:zombie_spawn_egg": 50,
+      "minecraft:ice": 4,
+      "minecraft:netherite_spear": 11,
+      "minecraft:dirt": 2,
+      "minecraft:fishing_rod": 37
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 23955,
+      "minecraft:walk_one_cm": 39966,
+      "minecraft:leave_game": 4,
+      "minecraft:horse_one_cm": 55016,
+      "minecraft:walk_under_water_one_cm": 1804,
+      "minecraft:mob_kills": 24,
+      "minecraft:play_time": 23955,
+      "minecraft:damage_dealt": 4285,
+      "minecraft:jump": 86,
+      "minecraft:time_since_death": 23955,
+      "minecraft:drop": 11,
+      "minecraft:sprint_one_cm": 6956,
+      "minecraft:fall_one_cm": 450,
+      "minecraft:total_world_time": 23955,
+      "minecraft:fly_one_cm": 117379,
+      "minecraft:walk_on_water_one_cm": 607,
+      "minecraft:crouch_one_cm": 2,
+      "minecraft:sneak_time": 83
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 17,
+      "minecraft:skeleton": 1,
+      "minecraft:creeper": 1,
+      "minecraft:rabbit": 1,
+      "minecraft:spider": 3
+    },
+    "minecraft:dropped": {
+      "minecraft:horse_spawn_egg": 1,
+      "minecraft:netherite_spear": 1,
+      "minecraft:wheat_seeds": 2,
+      "minecraft:spruce_log": 1,
+      "minecraft:enchanted_golden_apple": 1,
+      "minecraft:lead": 3,
+      "minecraft:ice": 1,
+      "minecraft:dirt": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:lead": 6,
+      "minecraft:enchanted_golden_apple": 1,
+      "minecraft:spruce_log": 1,
+      "minecraft:dirt": 36,
+      "minecraft:string": 1,
+      "minecraft:netherite_spear": 1,
+      "minecraft:wheat_seeds": 2,
+      "minecraft:ice": 1,
+      "minecraft:horse_spawn_egg": 1,
+      "minecraft:rotten_flesh": 12
+    }
+  },
+  "DataVersion": 4903
+}

@@ -1,0 +1,120 @@
+# =====================================================================
+#  Auction House - transaction history
+# =====================================================================
+#  '-' slots hold past purchases and sales.
+#
+#  Bottom row, slot for slot:
+#    45 PREVIOUS   46 BACK   48 STATS   49 TRANSACTIONS (reload)
+#    50 SEARCH                          53 NEXT
+#
+#  Page turns at the two ends of the row, the buttons between them.
+#
+#  BACK goes up one level to MY ITEMS, which is where this screen is
+#  reached from. /ah history opens it directly.
+#
+#  Title and item placeholders: %page% %max_page% %count% %search%
+#                               %spent% what the viewer has paid out
+#                               %made%  what the viewer has taken in
+# =====================================================================
+
+menu:
+  title: '▶ Transactions | Menu'
+  filler-symbol: '-'
+  layout:
+    - '---------'
+    - '---------'
+    - '---------'
+    - '---------'
+    - '---------'
+    - 'pb src  n'
+
+items:
+
+  previous:
+    material: RED_STAINED_GLASS_PANE
+    symbol: p
+    action: previous
+    name: '&#FF2121&lPREVIOUS PAGE'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick to navigate to'
+      - '&fthe previous Page.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Navigate'
+
+  back:
+    material: RED_STAINED_GLASS_PANE
+    symbol: b
+    action: back
+    name: '&#FF2121&lBACK'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick here to go back'
+      - '&fto your Items.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Open'
+
+  # What this player has paid out and taken in, over the entries this
+  # screen still remembers - see history.entries-per-player.
+  stats:
+    material: BOOK
+    symbol: s
+    action: stats
+    name: '&#FFD900&lSTATS'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FFD900Information:'
+      - '&fWhat you have paid out'
+      - '&fand taken in.'
+      - '&f'
+      - '&#FF2121⌄ &fTotal spent: &#FF2121$%spent%'
+      - '&#6BFF00⌃ &fTotal made: &#6BFF00$%made%'
+
+  reload:
+    material: SPYGLASS
+    symbol: r
+    action: refresh
+    name: '&#71F521&lTRANSACTIONS'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fThis page shows your'
+      - '&fold Transactions.'
+      - '&f'
+      - '&#71F521$ Entries: %count%'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Reload'
+
+  search:
+    material: OAK_SIGN
+    symbol: c
+    action: search
+    name: '&#00B5FF&lSEARCH'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#00B5FFInformation:'
+      - '&fClick here to search'
+      - '&fyour Transactions.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Search'
+
+  next:
+    material: LIME_STAINED_GLASS_PANE
+    symbol: n
+    action: next
+    name: '&#71F521&lNEXT PAGE'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fClick to navigate to'
+      - '&fthe next Page.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Navigate'

@@ -1,0 +1,174 @@
+# =====================================================================
+#  Auction House - main browse screen
+# =====================================================================
+#  Layout rules: one line per chest row, nine characters wide, each
+#  character the `symbol` of an item below. '-' slots hold the listings
+#  and paginate automatically - fewer '-' means fewer listings per page.
+#  A space leaves the slot empty.
+#
+#  The bottom row is the auction house bar, slot for slot:
+#    45 PREVIOUS   47 SORT     48 FILTER   49 REFRESH
+#    50 SEARCH     51 MY ITEMS             53 NEXT
+#
+#  Page turns sit at the two ends of the row, everything else between
+#  them. Slots 46 and 52 stay empty on purpose - they are the gap that
+#  separates the page arrows from the buttons next to them.
+#
+#  Transactions are no longer reached from here: they hang under MY
+#  ITEMS, which is where a player looks for their own trades. /ah
+#  history still opens them directly.
+#
+#  Title placeholders: %page% %max_page% %search% %seller%
+#                      %seller% is only filled by /ah view <player> and
+#                      is empty otherwise - put it in the title if you
+#                      want that screen to name whose shop it is.
+#  Item placeholders:  %page% %max_page% %sort% %filter% %count% %search%
+#                      %seller%
+#                      %mine%  how many auctions the viewer is running
+#                      %max%   how many they are allowed to run
+#                      %sort_newest% %sort_oldest% %sort_cheapest%
+#                      %sort_expensive%  one line each, the active mode
+#                      already marked - see sort-line in settings.yml
+#                      %filter_all% %filter_blocks% %filter_tools%
+#                      %filter_weapons% %filter_armour% %filter_food%
+#                      %filter_potions% %filter_books% %filter_other%
+#                      the same idea for the filter - see filter-line
+# =====================================================================
+
+menu:
+  title: '▶ Auction House | Menu (%page%/%max_page%)'
+  filler-symbol: '-'
+  # Redraws the open menu every so many seconds, so a listing that was
+  # bought or expired does not sit there until the player clicks. 0
+  # switches it off. Keep it coarse: a redraw under a moving mouse is
+  # how a player clicks the wrong item.
+  auto-refresh-seconds: 60
+  layout:
+    - '---------'
+    - '---------'
+    - '---------'
+    - '---------'
+    - '---------'
+    - 'p sfrcm n'
+
+items:
+
+  previous:
+    material: RED_STAINED_GLASS_PANE
+    symbol: p
+    action: previous
+    name: '&#FF2121&lPREVIOUS PAGE'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick to navigate to'
+      - '&fthe previous Page.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Navigate'
+
+  sort:
+    material: CAULDRON
+    symbol: s
+    action: sort
+    name: '&#71F521&lSORT'
+    lore:
+      - '&f'
+      - '&#71F521Information:'
+      - '&fClick here to sort'
+      - '&fthe Items.'
+      - '&f'
+      - '&#71F521Selected:'
+      - '%sort_newest%'
+      - '%sort_oldest%'
+      - '%sort_cheapest%'
+      - '%sort_expensive%'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Sort'
+
+  filter:
+    material: HOPPER
+    symbol: f
+    action: filter
+    name: '&#71F521&lFILTER'
+    lore:
+      - '&f'
+      - '&#71F521Information:'
+      - '&fClick here to show only'
+      - '&fone kind of Item.'
+      - '&f'
+      - '&#71F521Selected:'
+      - '%filter_all%'
+      - '%filter_blocks%'
+      - '%filter_tools%'
+      - '%filter_weapons%'
+      - '%filter_armour%'
+      - '%filter_food%'
+      - '%filter_potions%'
+      - '%filter_books%'
+      - '%filter_other%'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Filter'
+
+  refresh:
+    material: SPYGLASS
+    symbol: r
+    action: refresh
+    name: '&#00B5FF&lAUCTION HOUSE'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#00B5FFInformation:'
+      - '&fClick here to refresh'
+      - '&fthe Auctions.'
+      - '&f'
+      - '&#00B5FF$ Auctions: %count%'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Refresh'
+
+  search:
+    material: OAK_SIGN
+    symbol: c
+    action: search
+    name: '&#00B5FF&lSEARCH'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#00B5FFInformation:'
+      - '&fClick here to search'
+      - '&ffor an Item.'
+      - '&f'
+      - '&7End with &fstack &7or &fshulker'
+      - '&7for full stacks or boxes only.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Search'
+
+  mine:
+    material: CHEST
+    symbol: m
+    action: mine
+    name: '&#71F521&lMY ITEMS'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fClick here to view'
+      - '&fyour Items.'
+      - '&f'
+      - '&#71F521$ You are Selling: %mine%/%max%'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to View'
+
+  next:
+    material: LIME_STAINED_GLASS_PANE
+    symbol: n
+    action: next
+    name: '&#71F521&lNEXT PAGE'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fClick to navigate to'
+      - '&fthe next Page.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Navigate'

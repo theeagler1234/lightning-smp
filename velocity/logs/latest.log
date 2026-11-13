@@ -1,0 +1,184 @@
+[21:34:03] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 4.3.1...
+[21:34:04] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[21:34:05] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[21:34:05] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
+[21:34:05] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[21:34:06] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[21:34:08] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.1.1...
+[21:34:08] [main/INFO] [eaglerxserver]: (Platform: Velocity)
+[21:34:08] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
+[21:34:09] [main/ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity.<init>(PlatformPluginVelocity.java:256)
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$a251b.GUICE$TRAMPOLINE(<generated>)
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$a251b.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1186)
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.createPlugin(JavaPluginLoader.java:144)
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:202)
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:439)
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:310)
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71)
+[21:34:09] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.1.1 by lax1dude
+[21:34:09] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglermotd-reborn 1.0.1 by lax1dude
+[21:34:10] [main/WARN] [floodgate]: en_ is not a supported Floodgate language.
+[21:34:10] [main/INFO] [floodgate]: Took 1,161ms to boot Floodgate
+[21:34:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin floodgate 2.2.5-SNAPSHOT (b141-81b65cc) by GeyserMC
+[21:34:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin geyser 2.11.3-b1254 (git-master-bbd7e67) by GeyserMC
+[21:34:11] [main/INFO] [veloauth]: VeloAuth instance created.
+[21:34:11] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin veloauth 1.6.2 by Rafal
+[21:34:11] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin viaversion 5.12.2 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[21:34:11] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin viabackwards 5.12.2 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
+[21:34:11] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin viarewind ${version} by EnZaXD, Gerrygames, creeper123123321
+[21:34:11] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 9 plugins
+[21:34:11] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[21:34:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.1.1...
+[21:34:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[21:34:12] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
+[21:34:13] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 1 messages for listener0
+[21:34:13] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 6 query types
+[21:34:13] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[21:34:13] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[21:34:14] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
+[21:34:19] [EaglercraftXServer - Task Executor #0/INFO] [geyser]: Loading extensions...
+[21:34:19] [EaglercraftXServer - Task Executor #0/INFO] [geyser]: Loaded 0 extension(s)
+[21:34:19] [EaglercraftXServer - Task Executor #0/INFO] [veloauth]: Loading VeloAuth v1.6.2...
+[21:34:23] [Via-Mappingloader-1/INFO] [viaversion]: Loading block connection mappings ...
+[21:34:23] [/INFO] [net.rafalohaki.veloauth.i18n.Messages]: Reloaded language files for: en (external files enabled)
+[21:34:24] [EaglercraftXServer - Task Executor #0/INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
+[21:34:24] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[21:34:24] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[21:34:24] [EaglercraftXServer - Task Executor #0/INFO] [viabackwards]: Loading translations...
+[21:34:24] [EaglercraftXServer - Task Executor #0/INFO] [viabackwards]: Registering protocols...
+[21:34:26] [/INFO] [net.rafalohaki.veloauth.database.DatabaseManager]: VA-1501 legacy UUID preservation candidates=0, marked=0
+[21:34:26] [/INFO] [veloauth]: [PremiumResolver] Config - Mojang (with official Minecraft Services fallback): true, Ashcon: true, Wpme: false
+[21:34:26] [/INFO] [veloauth]: [PremiumResolver] Upstream request ceiling per minute - Mojang: 120, Ashcon: 60, Wpme: 60 (max wait 1000ms, 0 = unlimited)
+[21:34:26] [EaglercraftXServer - Task Executor #0/INFO] [viarewind]: Registering protocols...
+[21:34:26] [/INFO] [veloauth]: Auth server 'lobby' configured (mode=external, client compatibility=external-server-managed)
+[21:34:26] [/INFO] [veloauth]: Floodgate support: enabled (effective prefix='.', auth bypass=true)
+[21:34:26] [/INFO] [veloauth]: Initialized in 6542 ms (H2 database, en language, bStats integration initialized)
+[21:34:26] [/INFO] [veloauth]: Ready - player connections allowed
+[21:34:26] [EaglercraftXServer - Task Executor #0/INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
+[21:34:26] [EaglercraftXServer - Task Executor #0/INFO] [viaversion]: Highest supported version by the proxy: 26.3 (777)
+[21:34:27] [Netty epoll Boss #0/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x62c44e3e, L:/[0:0:0:0:0:0:0:0]:25565] successfully (Velocity method)
+[21:34:27] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[21:34:27] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (25.76s)!
+[21:34:27] [ViaVersion - Task Executor #0/INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
+[21:34:27] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: ******************************************
+[21:34:27] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: 
+[21:34:27] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: Loading Geyser version 2.11.3-b1254 (git-master-bbd7e67)
+[21:34:27] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: 
+[21:34:27] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: ******************************************
+[21:34:35] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: Registered 199 custom block overrides.
+[21:34:35] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: Registered 2 custom block item overrides.
+[21:34:35] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: Registered 7 custom blocks.
+[21:34:47] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: Registered 1 custom items
+[21:34:51] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: Built-in signaling started on http://0.0.0.0:19132
+[21:34:51] [Geyser-Velocity - Task Executor #0/INFO] [geyser]: Done (23.574s)! Run /geyser help for help!
+[21:34:51] [ForkJoinPool.commonPool-worker-1/INFO] [geyser]: §aThere's a new Geyser update available to support Bedrock version 26.63. Download it here: §9§nhttps://geysermc.org/download
+[21:34:56] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:53346) has connected
+[21:34:57] [Netty epoll Worker #3/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:53346): unable to connect to server lobby
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed with error(-111): Connection refused: localhost/127.0.0.1:7723
+Caused by: java.net.ConnectException: finishConnect(..) failed with error(-111): Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166)
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:361)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:772)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:749)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:616)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.handle(AbstractEpollChannel.java:477)
+	at io.netty.channel.epoll.EpollIoHandler$DefaultEpollIoRegistration.handle(EpollIoHandler.java:349)
+	at io.netty.channel.epoll.EpollIoHandler.processReady(EpollIoHandler.java:548)
+	at io.netty.channel.epoll.EpollIoHandler.run(EpollIoHandler.java:491)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:274)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:210)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1214)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[21:34:57] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:53346) has disconnected: Unable to connect you to lobby. Please try again later.
+[21:35:48] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:52534) has connected
+[21:35:48] [Netty epoll Worker #3/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:52534): unable to connect to server lobby
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed with error(-111): Connection refused: localhost/127.0.0.1:7723
+Caused by: java.net.ConnectException: finishConnect(..) failed with error(-111): Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166)
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:361)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:772)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:749)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:616)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.handle(AbstractEpollChannel.java:477)
+	at io.netty.channel.epoll.EpollIoHandler$DefaultEpollIoRegistration.handle(EpollIoHandler.java:349)
+	at io.netty.channel.epoll.EpollIoHandler.processReady(EpollIoHandler.java:548)
+	at io.netty.channel.epoll.EpollIoHandler.run(EpollIoHandler.java:491)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:274)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:210)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1214)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[21:35:48] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:52534) has disconnected: Unable to connect you to lobby. Please try again later.
+[21:36:56] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:52964) has connected
+[21:36:57] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has connected
+[21:37:09] [/WARN] [veloauth]: No reachable server from the Velocity try list; attempting fallback
+[21:37:09] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Schoolsmp has connected
+[21:37:10] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has disconnected
+[21:39:51] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has connected
+[21:39:51] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Schoolsmp has disconnected
+[21:45:44] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:52964) has disconnected
+[21:45:44] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has disconnected
+[21:46:54] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:47172) has connected
+[21:46:54] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has connected
+[21:47:06] [/WARN] [veloauth]: No reachable server from the Velocity try list; attempting fallback
+[21:47:06] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Schoolsmp has connected
+[21:47:06] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has disconnected
+[21:47:52] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has connected
+[21:47:52] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Schoolsmp has disconnected
+[21:48:34] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:47172) has disconnected
+[21:48:34] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has disconnected
+[21:48:35] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:45758) has connected
+[21:48:35] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has connected
+[21:48:42] [/WARN] [veloauth]: No reachable server from the Velocity try list; attempting fallback
+[21:48:42] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has connected
+[21:48:42] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has disconnected
+[21:49:10] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:45758) has disconnected
+[21:49:10] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has disconnected
+[21:49:11] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:49996) has connected
+[21:49:11] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has connected
+[21:50:17] [/WARN] [veloauth]: No reachable server from the Velocity try list; attempting fallback
+[21:50:17] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has connected
+[21:50:17] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> lobby has disconnected
+[22:03:47] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] the_eagler123 (/[0:0:0:0:0:0:0:1]:49996) has disconnected
+[22:03:47] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] the_eagler123 -> Survival has disconnected
+[22:04:19] [Thread-7/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[22:04:19] [Thread-7/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [eaglerxserver]: Disabling EaglercraftXServer 1.1.1...
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [eaglerxserver]: Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [eaglerxserver]: Disconnected from skin cache database successfully!
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [geyser]: Shutting down Geyser.
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [geyser]: Geyser shutdown successfully.
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [veloauth]: === VeloAuth - Shutdown ===
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [veloauth]: 🔴 Initialization flag set to FALSE - blocking all new player connections
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [veloauth]: Initiating VeloAuth graceful shutdown...
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [veloauth]: ConnectionManager shut down
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [net.rafalohaki.veloauth.database.DatabaseHealthCheck]: Health checks stopped
+[22:04:19] [WebSocketConnectReadThread-99/INFO] [geyser]: The skin uploader has been closed
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [net.rafalohaki.veloauth.database.DatabaseManager]: Database connection closed
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [net.rafalohaki.veloauth.util.VirtualThreadExecutorProvider]: Initiating graceful shutdown of Virtual Thread executor...
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [net.rafalohaki.veloauth.util.VirtualThreadExecutorProvider]: Virtual Thread executor shutdown completed successfully
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [veloauth]: VeloAuth shutdown completed successfully
+[22:04:19] [EaglercraftXServer - Task Executor #2/INFO] [veloauth]: === VeloAuth - Closed ===

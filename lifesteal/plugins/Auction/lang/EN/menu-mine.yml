@@ -1,0 +1,109 @@
+# =====================================================================
+#  Auction House - "My Items"
+# =====================================================================
+#  Three rows, the size this screen deserves: nobody runs forty-five
+#  auctions at once, and a chest that is mostly empty looks broken.
+#
+#  '-' slots hold your own listings. A click on one cancels it and
+#  returns the item; a right-click on a shulker box looks inside it.
+#
+#  Slot for slot:
+#    0  MY ITEMS (also reloads)     18 BACK
+#    24 PREVIOUS   25 NEXT          26 TRANSACTIONS
+#
+#  The two corners are the ones that matter: the info tile sits top
+#  left, your trade history bottom right. Everything between them is
+#  listing space.
+#
+#  PREVIOUS and NEXT only appear once you have more listings than fit
+#  on one page - with the shipped limit of ten they stay hidden.
+#
+#  Item placeholders: %count% %max% %page% %max_page%
+# =====================================================================
+
+menu:
+  title: '▶ My Items | Menu'
+  filler-symbol: '-'
+  layout:
+    - 'i--------'
+    - '---------'
+    - 'b-----pnt'
+
+items:
+
+  # Top left corner: what this screen is, and how to put something on it.
+  # Clicking it draws the screen again.
+  info:
+    material: SPYGLASS
+    symbol: i
+    action: refresh
+    name: '&#71F521&lMY ITEMS'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fThis page shows what'
+      - '&fItems you are selling.'
+      - '&f'
+      - '&#71F521$ You are Selling: %count%/%max%'
+      - '&f'
+      - '&#00B5FFHold an Item and type'
+      - '&#00B5FF/ah sell <price>'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Reload'
+
+  back:
+    material: RED_STAINED_GLASS_PANE
+    symbol: b
+    action: back
+    name: '&#FF2121&lBACK'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick here to go to'
+      - '&fthe Main-Menu.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Open'
+
+  previous:
+    material: RED_STAINED_GLASS_PANE
+    symbol: p
+    action: previous
+    name: '&#FF2121&lPREVIOUS PAGE'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick to navigate to'
+      - '&fthe previous Page.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Navigate'
+
+  next:
+    material: LIME_STAINED_GLASS_PANE
+    symbol: n
+    action: next
+    name: '&#71F521&lNEXT PAGE'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fClick to navigate to'
+      - '&fthe next Page.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Navigate'
+
+  history:
+    material: EMERALD
+    symbol: t
+    action: history
+    name: '&#FF2121&lTRANSACTIONS'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick here to open your'
+      - '&fItem Transactions.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Open'

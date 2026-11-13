@@ -1,0 +1,70 @@
+# =====================================================================
+#  Auction House - listing confirmation
+# =====================================================================
+#  Shown by /ah sell <price> before the item leaves your hand. Slot for
+#  slot: 11 CANCEL, 13 the item, 15 CONFIRM - the same arrangement as
+#  the buy confirmation.
+#
+#  The item stays in the seller's hand the whole time this screen is
+#  open. Nothing is listed until CONFIRM is clicked, and if the hand
+#  has changed in between the listing is refused rather than guessed.
+#
+#  Turn this screen off with listings.confirm-before-listing in
+#  settings.yml; /ah sell then lists straight away as it used to.
+#
+#  Item placeholders: %item% %price% %fee% %net% %duration%
+# =====================================================================
+
+menu:
+  title: '▶ Sell Item | Menu'
+  filler-symbol: '-'
+  layout:
+    - '---------'
+    - '--c-d-y--'
+    - '---------'
+
+items:
+
+  # Slots nothing can be put into. Grey glass says so at a glance, and the
+  # blank name keeps "Gray Stained Glass Pane" from appearing under the
+  # cursor.
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    symbol: '-'
+    name: ' '
+
+  cancel:
+    material: RED_STAINED_GLASS_PANE
+    symbol: c
+    action: cancel
+    name: '&#FF2121&lCANCEL'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick here to keep'
+      - '&fthe Item.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Cancel'
+
+  display:
+    material: AIR
+    symbol: d
+    action: display
+
+  confirm:
+    material: LIME_STAINED_GLASS_PANE
+    symbol: y
+    action: confirm
+    name: '&#71F521&lCONFIRM'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fPut this Item up for'
+      - '&f&#6BFF00$%price%&f?'
+      - '&f'
+      - '&#FFD900⚑ &fYou receive: &#6BFF00$%net%'
+      - '&#FF2121⌚ &fRuns for: &#FF2121%duration%'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Confirm'

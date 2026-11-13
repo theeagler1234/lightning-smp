@@ -1,0 +1,14 @@
+{
+    "maxLevel": 1,
+    "weight": 1,
+    "minCost": 15,
+    "minCostPerLevel": 0,
+    "maxCost": 65,
+    "maxCostPerLevel": 0,
+    "anvilCost": 7,
+    "supportedItems": "#minecraft:enchantable/mining",
+    "inEnchantingTable": true,
+    "tradeable": true,
+    "lootable": true,
+    "treasure": false
+}

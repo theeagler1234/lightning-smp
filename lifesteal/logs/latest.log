@@ -1,0 +1,315 @@
+[21:40:48] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.5.0.2+1-LTS; Microsoft Microsoft-15804669) on Linux 6.8.0-1070-azure (amd64)
+[21:40:48] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-111-main@f570646 (2026-08-07T16:16:19Z) for Minecraft 26.2
+[21:40:48] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[21:40:49] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-reflect/2.4.20/kotlin-reflect-2.4.20.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-json/1.12.0/kotlinx-serialization-json-1.12.0.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.12.0/kotlinx-serialization-bom-1.12.0.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-json-jvm/1.12.0/kotlinx-serialization-json-jvm-1.12.0.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.12.0/kotlinx-serialization-core-jvm-1.12.0.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0.pom
+[21:40:50] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.11.0/kotlinx-coroutines-bom-1.11.0.pom
+[21:40:51] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0.pom
+[21:40:51] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom
+[21:40:51] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.2.20/kotlin-stdlib-2.2.20.pom
+[21:40:51] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-cbor/1.12.0/kotlinx-serialization-cbor-1.12.0.pom
+[21:40:51] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-cbor-jvm/1.12.0/kotlinx-serialization-cbor-jvm-1.12.0.pom
+[21:40:51] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/de/miraculixx/kpaper/1.2.1/kpaper-1.2.1.pom
+[21:40:51] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-json-jvm/1.5.1/kotlinx-serialization-json-jvm-1.5.1.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.5.1/kotlinx-serialization-bom-1.5.1.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.8.21/kotlin-stdlib-1.8.21.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.21/kotlin-stdlib-common-1.8.21.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.5.1/kotlinx-serialization-core-jvm-1.5.1.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.7.1/kotlinx-coroutines-core-jvm-1.7.1.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.7.1/kotlinx-coroutines-bom-1.7.1.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.20/kotlin-stdlib-common-1.8.20.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.20/kotlin-stdlib-jdk8-1.8.20.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.8.20/kotlin-stdlib-1.8.20.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.20/kotlin-stdlib-jdk7-1.8.20.pom
+[21:40:52] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-jdk8/1.7.1/kotlinx-coroutines-jdk8-1.7.1.pom
+[21:40:53] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom
+[21:40:53] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.8.22/kotlin-stdlib-1.8.22.pom
+[21:40:53] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.22/kotlin-stdlib-common-1.8.22.pom
+[21:40:53] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom
+[21:40:53] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-1/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-reflect/2.4.20/kotlin-reflect-2.4.20.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-2/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-json/1.12.0/kotlinx-serialization-json-1.12.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-json-jvm/1.12.0/kotlinx-serialization-json-jvm-1.12.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-4/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.12.0/kotlinx-serialization-core-jvm-1.12.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-2/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-cbor/1.12.0/kotlinx-serialization-cbor-1.12.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-serialization-cbor-jvm/1.12.0/kotlinx-serialization-cbor-jvm-1.12.0.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-4/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/de/miraculixx/kpaper/1.2.1/kpaper-1.2.1.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-jdk8/1.7.1/kotlinx-coroutines-jdk8-1.7.1.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.jar
+[21:40:53] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.jar
+[21:40:54] [ServerMain/INFO]: [PluginInitializerManager] Initialized 11 plugins
+[21:40:54] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (2):
+ - Veinminer (2.13.0), Veinminer_Enchantment (2.13.0)
+[21:40:54] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (9):
+ - Auction (2.0), Essentials (2.22.1-dev+28-f8724e2), EssentialsDiscord (2.22.1-dev+28-f8724e2), EssentialsDiscordLink (2.22.1-dev+28-f8724e2), GrimAC (2.3.74), LifeStealZ (2.21.1), Vault (2.20.3), WorldEdit (7.4.6+7648-00664b0), WorldGuard (7.0.21+2424-da30a99)
+[21:41:00] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[21:41:00] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[21:41:02] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 1,949.5ms
+[21:41:02] [ServerMain/INFO]: Found new data pack Veinminer/provided-c-tags, loading it automatically
+[21:41:02] [ServerMain/INFO]: Found new data pack Veinminer_Enchantment/enchantment, loading it automatically
+[21:41:02] [ServerMain/INFO]: Found new data pack paper, loading it automatically
+[21:41:04] [Worker-Main-1/INFO]: No existing world data, creating new world
+[21:41:06] [ServerMain/INFO]: Loaded 1585 recipes
+[21:41:06] [ServerMain/INFO]: Loaded 1688 advancements
+[21:41:06] [Server thread/INFO]: Starting minecraft server version 26.2
+[21:41:06] [Server thread/INFO]: Loading properties
+[21:41:06] [Server thread/INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
+[21:41:06] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[21:41:06] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:41:06] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:41:07] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[21:41:07] [Server thread/INFO]: Default game type: SURVIVAL
+[21:41:07] [Server thread/INFO]: Generating keypair
+[21:41:07] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:41:07] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:41:07] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[21:41:08] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'worldguard-bukkit-7.0.21.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 26.3
+	at org.bukkit.craftbukkit.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:394) ~[paper-26.2.jar:26.2-111-f570646]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:121) ~[paper-26.2.jar:26.2-111-f570646]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-26.2.jar:26.2-111-f570646]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-26.2.jar:26.2-111-f570646]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-26.2.jar:26.2-111-f570646]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-26.2.jar:26.2-111-f570646]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:549) ~[paper-26.2.jar:26.2-111-f570646]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:297) ~[paper-26.2.jar:26.2-111-f570646]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1266) ~[paper-26.2.jar:26.2-111-f570646]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:303) ~[paper-26.2.jar:26.2-111-f570646]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[21:41:09] [Server thread/INFO]: [LifeStealZ] --------------------------------------------------------------------------------
+[21:41:09] [Server thread/INFO]: [LifeStealZ] This plugin uses FastStats to collect anonymous usage statistics.
+[21:41:09] [Server thread/INFO]: [LifeStealZ] No personal or identifying information is ever collected.
+[21:41:09] [Server thread/INFO]: [LifeStealZ] To opt out, set 'enabled=false' in the metrics configuration file.
+[21:41:09] [Server thread/INFO]: [LifeStealZ] Learn more at: https://faststats.dev/info
+[21:41:09] [Server thread/INFO]: [LifeStealZ] 
+[21:41:09] [Server thread/INFO]: [LifeStealZ] Since this is your first start with FastStats, metrics submission will not start
+[21:41:09] [Server thread/INFO]: [LifeStealZ] until you restart the server to allow you to opt out if you prefer.
+[21:41:09] [Server thread/INFO]: [LifeStealZ] --------------------------------------------------------------------------------
+[21:41:09] [Server thread/INFO]: [Vault] Loading server plugin Vault v2.20.3
+[21:41:09] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.22.1-dev+28-f8724e2
+[21:41:09] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.6+7648-00664b0
+[21:41:09] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@4381cfe6]
+[21:41:09] [Server thread/INFO]: [WorldEdit] Default configuration file written: config.yml
+[21:41:09] [Server thread/INFO]: [EssentialsDiscord] Loading server plugin EssentialsDiscord v2.22.1-dev+28-f8724e2
+[21:41:09] [Server thread/INFO]: [Veinminer] Loading server plugin Veinminer v2.13.0
+[21:41:09] [Server thread/INFO]: [Veinminer] Detected platform: Paper
+[21:41:09] [Server thread/INFO]: [de.miraculixx.veinminer.Veinminer] Created settings.json default config
+[21:41:09] [Server thread/INFO]: [GrimAC] Loading server plugin GrimAC v2.3.74
+[21:41:10] [Server thread/INFO]: [GrimAC] Loading PacketEvents...
+[21:41:10] [Server thread/INFO]: [packetevents] Loading packetevents...
+[21:41:13] [Server thread/INFO]: [packetevents] Loading block mappings for V_26_3/23...
+[21:41:14] [Server thread/INFO]: [packetevents] Finished loading block mappings for V_26_3/23 in 576.277572ms
+[21:41:14] [Server thread/INFO]: [packetevents] Loaded packetevents v2.14.1+addb80e-SNAPSHOT for GrimAC
+[21:41:14] [pool-14-thread-1/INFO]: [packetevents] Loading block mappings for V_26_2/22...
+[21:41:15] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Loading server plugin EssentialsDiscordLink v2.22.1-dev+28-f8724e2
+[21:41:15] [Server thread/INFO]: [Veinminer_Enchantment] Loading server plugin Veinminer_Enchantment v2.13.0
+[21:41:15] [Server thread/INFO]: [LifeStealZ] Loading server plugin LifeStealZ v2.21.1
+[21:41:15] [Server thread/INFO]: [LifeStealZ] Loading LifeStealZ...
+[21:41:15] [Server thread/INFO]: [Auction] Loading server plugin Auction v2.0
+[21:41:15] [Server thread/INFO]: [Vault] Enabling Vault v2.20.3
+[21:41:15] [Server thread/INFO]: [Vault] Enabled Version 2.20.3
+[21:41:15] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.6+7648-00664b0
+[21:41:15] [pool-14-thread-1/INFO]: [packetevents] Finished loading block mappings for V_26_2/22 in 743.415264ms
+[21:41:15] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[21:41:16] [Server thread/INFO]: WEPIF: Updated config file
+[21:41:16] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[21:41:16] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v26_2.PaperweightAdapter as the Bukkit adapter
+[21:41:16] [Server thread/INFO]: [Veinminer] Enabling Veinminer v2.13.0
+[21:41:17] [Server thread/INFO]: [Veinminer_Enchantment] Enabling Veinminer_Enchantment v2.13.0
+[21:41:17] [Server thread/INFO]: [Veinminer_Enchantment] Veinminer_Enchantment loaded (paper)
+[21:41:17] [Server thread/INFO]: Preparing level "world"
+[21:41:17] [DefaultDispatcher-worker-1/WARN]: [de.miraculixx.veinminer.Veinminer] veinminer is outdated (26.2). Installed: 2.13.0 -> Latest: 2.13.1
+[21:41:18] [Server thread/INFO]: Selecting spawn point for level 'minecraft:overworld'...
+[21:41:29] [Server thread/INFO]: Selecting spawn point for level 'minecraft:the_nether'...
+[21:41:31] [Server thread/INFO]: Selecting spawn point for level 'minecraft:the_end'...
+[21:41:31] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[21:41:31] [Server thread/INFO]: Preparing spawn area: 100%
+[21:41:31] [Server thread/INFO]: Prepared spawn area in 13656 ms
+[21:41:31] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[21:41:31] [Server thread/INFO]: Preparing spawn area: 100%
+[21:41:31] [Server thread/INFO]: Prepared spawn area in 2281 ms
+[21:41:31] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[21:41:31] [Server thread/INFO]: Preparing spawn area: 100%
+[21:41:31] [Server thread/INFO]: Prepared spawn area in 550 ms
+[21:41:31] [Server thread/INFO]: Done preparing level "world" (14.896s)
+[21:41:31] [Server thread/INFO]: [Essentials] Enabling Essentials v2.22.1-dev+28-f8724e2
+[21:41:32] [Server thread/WARN]: [Essentials] Beginning Adventure locale file conversion.
+[21:41:32] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/config.yml
+[21:41:32] [Server thread/WARN]: [Essentials] Missing userdata folder, aborting
+[21:41:32] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/kits.yml
+[21:41:32] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[21:41:32] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[21:41:32] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[21:41:32] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[21:41:32] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[21:41:32] [Server thread/INFO]: [Essentials] Done converting random teleport config.
+[21:41:32] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/worth.yml
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Modern (Registry-based) PatternType Provider as the provider for PatternTypeProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[21:41:32] [Server thread/INFO]: [Essentials] No provider found for BiomeKeyProvider, but it is nullable
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Paper 1.13+ Tile Entity Provider as the provider for TileEntityProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[21:41:32] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/tpr.yml
+[21:41:33] [Server thread/INFO]: [Essentials] Loaded 48578 items from items.json.
+[21:41:33] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/custom_items.yml
+[21:41:33] [Server thread/INFO]: [Essentials] Using locale en
+[21:41:33] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[21:41:33] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[21:41:33] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[21:41:33] [Server thread/INFO]: [EssentialsDiscord] Enabling EssentialsDiscord v2.22.1-dev+28-f8724e2
+[21:41:33] [Server thread/INFO]: [Essentials] Creating config from template: plugins/EssentialsDiscord/config.yml
+[21:41:33] [Server thread/INFO]: [EssentialsDiscord] Starting Metrics. Opt-out using the global bStats config.
+[21:41:33] [Server thread/INFO]: [EssentialsDiscord] Attempting to login to Discord...
+[21:41:33] [Server thread/ERROR]: [EssentialsDiscord] An error occurred while logging into Discord, which has caused the plugin to disable itself: 
+No token provided! Please follow the tutorial in the config in order to setup the plugin.
+[21:41:33] [Server thread/INFO]: [GrimAC] Enabling GrimAC v2.3.74
+[21:41:33] [Server thread/INFO]: [GrimAC] Registering packets...
+[21:41:33] [Server thread/INFO]: [GrimAC] Registering tick schedulers...
+[21:41:34] [Server thread/INFO]: Grim Version: 2.3.74
+[21:41:34] [Server thread/INFO]: [grim-datastore] [grim-datastore] SQLite engine 3.49.1 — using modern dialect
+[21:41:34] [Server thread/INFO]: [grim-datastore] [v2-bootstrap] grim:grim_violations (violations): 0 migration(s)
+[21:41:34] [Server thread/INFO]: [grim-datastore] [v2-bootstrap] grim:grim_checks (checks): 0 migration(s)
+[21:41:34] [Server thread/INFO]: [grim-datastore] [v2-bootstrap] grim:grim_sessions (sessions): 0 migration(s)
+[21:41:34] [Server thread/INFO]: [grim-datastore] [v2-bootstrap] grim:grim_players (players): 0 migration(s)
+[21:41:34] [Server thread/INFO]: [grim-datastore] [v2-bootstrap] grim:grim_settings (settings): 0 migration(s)
+[21:41:34] [Server thread/INFO]: [grim-datastore] [v2-bootstrap] grim:server_startups (server_startups): 0 migration(s)
+[21:41:34] [Server thread/INFO]: [grim-datastore] [grim-datastore] v2 cutover complete: 1 v2 backend(s), ac.grim.grimac.internal.storage.core.V2Routes@2475dac8 routes installed, 0 legacy backends
+[21:41:34] [Server thread/INFO]: [grim-datastore] [grim-datastore] storage startup claimed: serverName='ChangeMe' instanceId=f73ead14-8e3f-4257-b149-63ef22e2b98b startupId=0b921115-5436-477b-b17d-2f44b50354ce fence=463e8fff-e879-45b6-8303-89448d6ce163.
+[21:41:34] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Enabling EssentialsDiscordLink v2.22.1-dev+28-f8724e2
+[21:41:34] [Server thread/INFO]: [Essentials] Creating config from template: plugins/EssentialsDiscordLink/config.yml
+[21:41:34] [Server thread/ERROR]: Error occurred while enabling EssentialsDiscordLink v2.22.1-dev+28-f8724e2 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "net.essentialsx.api.v2.services.discord.DiscordService.getInteractionController()" because "this.api" is null
+	at EssentialsXDiscordLink.jar//net.essentialsx.discordlink.EssentialsDiscordLink.onEnable(EssentialsDiscordLink.java:68) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:279) ~[paper-api-26.2.build.111-stable.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:201) ~[paper-26.2.jar:26.2-111-f570646]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-26.2.jar:26.2-111-f570646]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:519) ~[paper-api-26.2.build.111-stable.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:633) ~[paper-26.2.jar:26.2-111-f570646]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:590) ~[paper-26.2.jar:26.2-111-f570646]
+	at net.minecraft.server.MinecraftServer.initPostWorld(MinecraftServer.java:648) ~[paper-26.2.jar:26.2-111-f570646]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:343) ~[paper-26.2.jar:26.2-111-f570646]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1266) ~[paper-26.2.jar:26.2-111-f570646]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:303) ~[paper-26.2.jar:26.2-111-f570646]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[21:41:34] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Disabling EssentialsDiscordLink v2.22.1-dev+28-f8724e2
+[21:41:34] [Server thread/INFO]: [LifeStealZ] Enabling LifeStealZ v2.21.1
+[21:41:34] [Server thread/INFO]: [LifeStealZ] Saving file lang/cs-CZ.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/de-DE.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/en-US.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/es-ES.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/fr-FR.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/pl-PL.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/vi-VN.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/zh-CN.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/nl-NL.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/ru-RU.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/pt-BR.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/ja-JP.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/hu-HU.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/it-IT.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Saving file lang/tr-TR.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Using language file: plugins/LifeStealZ/lang/en-US.yml
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Using SQLite storage
+[21:41:35] [Server thread/INFO]: [com.zetaplugins.zetacore.libs.reflections.Reflections] Reflections took 159 ms to scan 1 urls, producing 39 keys and 134 values
+[21:41:35] [Server thread/INFO]: [LifeStealZ] Registered 5 commands
+[21:41:36] [Server thread/INFO]: [com.zetaplugins.zetacore.libs.reflections.Reflections] Reflections took 56 ms to scan 1 urls, producing 39 keys and 134 values
+[21:41:36] [Server thread/INFO]: [LifeStealZ] Registered 19 event listeners
+[21:41:36] [Server thread/INFO]: [LifeStealZ] LifeStealZ enabled!
+[21:41:36] [Server thread/INFO]: [Auction] Enabling Auction v2.0
+[21:41:36] [Server thread/INFO]: [Auction] Economy hooked: EssentialsX Economy
+[21:41:36] [Server thread/INFO]: [Auction] Loaded 0 auctions.
+[21:41:36] [Server thread/INFO]: [spark] Starting background profiler...
+[21:41:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:41:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:41:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:41:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:41:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:41:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:41:37] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:41:37] [Server thread/INFO]: Running delayed init tasks
+[21:41:37] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v2.20.3)!
+[21:41:37] [Craft Scheduler Thread - 4 - Essentials/INFO]: [Essentials] Fetching version information...
+[21:41:37] [Server thread/INFO]: [de.miraculixx.veinminer.Veinminer] Created blocks.json default config
+[21:41:37] [Server thread/INFO]: [de.miraculixx.veinminer.Veinminer] Created groups.json default config
+[21:41:37] [Server thread/INFO]: [de.miraculixx.veinminer.Veinminer] All events enabled!
+[21:41:37] [Server thread/INFO]: Done (50.486s)! For help, type "help"
+[21:41:38] [Paper Async Task Handler Thread - 1/WARN]: *** You are running an outdated version of Minecraft, which is 2 releases and 24 builds behind!
+[21:41:38] [Paper Async Task Handler Thread - 1/WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
+[21:41:38] [Craft Scheduler Thread - 6 - GrimAC/INFO]: New GrimAC version found! Version 2.3.75-e457d55 is available to be downloaded here: https://modrinth.com/plugin/grimac
+[21:41:44] [Server thread/INFO]: Stopping the server
+[21:41:44] [Server thread/INFO]: Stopping server
+[21:41:44] [Server thread/INFO]: [Auction] Disabling Auction v2.0
+[21:41:44] [Server thread/INFO]: [LifeStealZ] Disabling LifeStealZ v2.21.1
+[21:41:44] [Server thread/INFO]: [LifeStealZ] Canceling all running tasks...
+[21:41:44] [Server thread/INFO]: [LifeStealZ] Shutting down metrics...
+[21:41:44] [Server thread/INFO]: [LifeStealZ] LifeStealZ disabled!
+[21:41:44] [Server thread/INFO]: [Veinminer_Enchantment] Disabling Veinminer_Enchantment v2.13.0
+[21:41:44] [Server thread/INFO]: [GrimAC] Disabling GrimAC v2.3.74
+[21:41:44] [Server thread/INFO]: [GrimAC] Terminating PacketEvents...
+[21:41:44] [Server thread/INFO]: [Veinminer] Disabling Veinminer v2.13.0
+[21:41:44] [Server thread/INFO]: [EssentialsDiscord] Disabling EssentialsDiscord v2.22.1-dev+28-f8724e2
+[21:41:44] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.4.6+7648-00664b0
+[21:41:44] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[21:41:44] [Server thread/INFO]: [Essentials] Disabling Essentials v2.22.1-dev+28-f8724e2
+[21:41:44] [Server thread/INFO]: [Vault] Disabling Vault v2.20.3
+[21:41:44] [Server thread/INFO]: Saving players
+[21:41:44] [Server thread/INFO]: Saving worlds
+[21:41:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.05s
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
+[21:41:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.05s
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
+[21:41:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
+[21:41:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
+[21:41:45] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.06s
+[21:41:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
+[21:41:45] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
+[21:41:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:41:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:41:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:41:45] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:41:45] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[21:41:45] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[21:41:45] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[21:41:45] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -1,0 +1,42 @@
+# =====================================================================
+#  Auction House - looking inside a shulker box
+# =====================================================================
+#  A shulker box on the auction house is a sealed box: the price is
+#  visible, the contents are not. Right-click a listed shulker to open
+#  this screen and see what is in it before you pay.
+#
+#  Four rows: the top three are the box's own 27 slots, the bottom row
+#  carries BACK on slot 27. Nothing here can be taken out or put in.
+#
+#  Slot for slot:
+#    0-26 the contents of the box     27 BACK
+#
+#  Title and item placeholders: %item% %count% %price% %seller%
+# =====================================================================
+
+menu:
+  title: '▶ Shulker View | Menu'
+  filler-symbol: '-'
+  layout:
+    - '---------'
+    - '---------'
+    - '---------'
+    - 'b        '
+
+items:
+
+  back:
+    material: RED_STAINED_GLASS_PANE
+    symbol: b
+    action: back
+    name: '&#FF2121&lBACK'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick here to go back'
+      - '&fto the Auctions.'
+      - '&f'
+      - '&#00B5FF$ Items inside: %count%'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Open'

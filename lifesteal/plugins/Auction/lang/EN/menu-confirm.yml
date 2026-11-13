@@ -1,0 +1,63 @@
+# =====================================================================
+#  Auction House - buy confirmation
+# =====================================================================
+#  Slot for slot: 11 CANCEL, 13 the item, 15 CONFIRM. The 'd' slot
+#  shows the item being bought.
+#
+#  Cancel on the left, confirm on the right - the same order as in the
+#  listing confirmation, so a player never learns two opposite habits
+#  for the two screens that spend their money.
+#
+#  Item placeholders: %item% %price% %seller% %remaining%
+# =====================================================================
+
+menu:
+  title: '▶ Confirm | Menu'
+  filler-symbol: '-'
+  layout:
+    - '---------'
+    - '--c-d-y--'
+    - '---------'
+
+items:
+
+  # Slots nothing can be put into. Grey glass says so at a glance, and the
+  # blank name keeps "Gray Stained Glass Pane" from appearing under the
+  # cursor.
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    symbol: '-'
+    name: ' '
+
+  confirm:
+    material: LIME_STAINED_GLASS_PANE
+    symbol: y
+    action: confirm
+    name: '&#71F521&lCONFIRM'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#71F521Information:'
+      - '&fAre you sure you want'
+      - '&fto buy this Item?'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Confirm'
+
+  display:
+    material: AIR
+    symbol: d
+    action: display
+
+  cancel:
+    material: RED_STAINED_GLASS_PANE
+    symbol: c
+    action: cancel
+    name: '&#FF2121&lCANCEL'
+    lore:
+      - '&7Description'
+      - '&f'
+      - '&#FF2121Information:'
+      - '&fClick here if you'
+      - '&fchanged your mind.'
+      - '&e'
+      - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Cancel'

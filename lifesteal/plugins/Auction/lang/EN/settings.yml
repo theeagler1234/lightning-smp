@@ -1,0 +1,415 @@
+# =====================================================================
+#  Auction House
+# =====================================================================
+#  Menus live in menu-browse.yml, menu-mine.yml, menu-history.yml,
+#  menu-confirm.yml, menu-confirm-listing.yml and menu-shulker.yml.
+#  This file holds behaviour and every message.
+#
+#  Worth knowing:
+#    * Listings age in REAL time. A "7 day" listing expires 7 days after
+#      it was created, whether or not the server was online in between.
+#    * When a listing expires and its seller is offline, the item is
+#      parked and handed over on their next join or /ah. Nothing is lost.
+# =====================================================================
+
+# The language is NOT set here. It sits in config.yml one folder up, next
+# to lang/, and it decides which of the lang/<code>/ folders this file is
+# read from. Switching it there creates the other folder from scratch -
+# your settings do not move across, so choose before you configure.
+
+
+prefix: '&#00B5FF&lAUCTION &#9B9B9B» '
+
+listings:
+  # How many listings one player may run at the same time.
+  max-per-player: 10
+
+  # Ranks lift that limit. A player holding auction.listings.<n> may run
+  # <n> listings instead, and the highest number they hold wins - the nodes
+  # do not stack. Only numbers ABOVE max-per-player count, so giving out a
+  # small one can never take listings away.
+  #
+  #     /lp group prime permission set auction.listings.15
+  #
+  # This is the highest number the plugin looks for. Raise it if you hand
+  # out a bigger one; every number in between is checked, so keep it sane.
+  permission-ceiling: 50
+
+  # Lifetime of a listing, in hours. 168 = 7 days.
+  duration-hours: 168
+
+  # Price limits. The cap is there so a troll listing for 999 trillion
+  # cannot wreck the sort order or the lore formatting.
+  min-price: 1
+  max-price: 1000000000
+
+  # What the house keeps from every sale, in percent. 0 hands the seller
+  # the full price, which is what happens on a fresh install - turn it up
+  # only if you want the auction house to drain money out of the economy.
+  # The buyer always pays the listed price; the fee comes off what the
+  # seller receives, and the seller is shown that figure before listing.
+  fee-percent: 0
+
+  # Ask before /ah sell puts the item up. The item stays in the seller's
+  # hand until they confirm. false lists straight away.
+  confirm-before-listing: true
+
+  # Materials that may never be listed, whatever they are named. Empty on
+  # a fresh install - decide for your own server what has no business on
+  # an auction house. Example:
+  #
+  #     blacklist:
+  #       - BEDROCK
+  #       - COMMAND_BLOCK
+  #
+  # Unknown names are ignored with a line in the console, so a typo costs
+  # you that entry and nothing else.
+  blacklist: []
+
+history:
+  # Purchases and sales remembered per player. Older entries fall off.
+  entries-per-player: 45
+  # How dates in the history lore are shown (Java SimpleDateFormat).
+  date-format: 'yyyy/MM/dd HH:mm'
+
+broadcast:
+  # Players with this permission do not see the listing broadcasts.
+  # Wire it to your settings menu to give players a toggle.
+  mute-permission: 'auction.mute'
+
+# ---------------------------------------------------------------------
+#  Discord webhook
+# ---------------------------------------------------------------------
+#  Posts a line into a Discord channel whenever somebody lists an item.
+#
+#  WHERE THE URL COMES FROM
+#  In Discord: channel settings -> Integrations -> Webhooks -> New
+#  Webhook -> Copy Webhook URL. It starts with
+#  https://discord.com/api/webhooks/ - treat it like a password, because
+#  anyone holding it can write into that channel.
+#
+#  The request goes out in the background, so the server never waits for
+#  Discord, not even when Discord is slow or unreachable. A failure puts
+#  exactly one line in the console and the rest stay silent until the
+#  next /ah reload - a broken webhook must not bury everything else in
+#  there.
+discord:
+
+  # Off by default: there is nothing to configure until you have a URL.
+  enabled: false
+
+  # The webhook URL. Has to be https - Discord accepts nothing else.
+  url: ''
+
+  # Only listings at or above this price are posted. 0 posts every one.
+  # Worth raising on a busy server: Discord limits how often a webhook
+  # may be used, and a channel full of one-dirt-block auctions is a
+  # channel people mute.
+  min-price: 0
+
+  # What is posted.  %player%  %item%  %price%
+  # Colour codes are removed before sending - Discord would show them as
+  # the two characters they are. Set this to '' to silence the webhook
+  # without touching anything else.
+  message: '%player% listed %item% for $%price%'
+
+data:
+  # How often auction data is written to disk. Also saved on shutdown, and
+  # immediately after every listing, purchase and cancellation - this
+  # interval is the safety net, not the main path.
+  save-interval-seconds: 300
+
+
+# ---------------------------------------------------------------------
+#  Where the auction data is kept
+# ---------------------------------------------------------------------
+#  yaml     one file per kind of record, readable, fixable by hand  (default)
+#  sqlite   one database file - better once you have thousands of listings
+#  mysql    several servers share the same auction house
+#
+#  Nothing to install for any of them: SQLite and MySQL drivers already ship
+#  with Bukkit, Spigot, Paper and Folia.
+#
+#  An old data/auctions.yml, data/returns.yml or data/transactions.yml from
+#  Auction 1.x is moved across automatically on the first start - nobody
+#  loses a listing by updating. Switching type LATER does not move anything,
+#  so export first if the auction house is already in use.
+#
+#  If the database cannot be reached, the plugin falls back to yaml and says
+#  so in the console rather than starting with an empty auction house.
+storage:
+  type: yaml
+
+  mysql:
+    host: localhost
+    port: 3306
+    database: minecraft
+    user: root
+    password: ''
+    # One table holds every plugin's data. Change it only if that name is
+    # already taken in your database.
+    table: sk_data
+
+# ---------------------------------------------------------------------
+#  Search
+# ---------------------------------------------------------------------
+#  /ah <text> and /ah search <text> look at the item's name AND at what
+#  is inside shulker boxes (every colour) and bundles. Items that match by
+#  their own name come first, the boxes and bundles holding a match after
+#  them - each group in the order of the SORT button.
+#
+#  Two words at the END of a search narrow it down, in either order:
+#    stack     only full stacks: a full stack on its own, or a box or
+#              bundle holding at least one stack's worth
+#    shulker   only shulker boxes that hold the item, the ones holding
+#              the most first
+#
+#    /ah diamond                 diamonds, then boxes with diamonds
+#    /ah diamond stack           full stacks, then boxes with a stack
+#    /ah diamond shulker         only boxes with diamonds, most first
+#    /ah diamond stack shulker   only boxes with at least a stack
+#
+#  They only count with a search word in front of them: /ah shulker still
+#  finds shulker boxes by name. The sign and the SEARCH button take the
+#  same words.
+search:
+  # How the SEARCH button in the auction house and in the transactions
+  # menu asks for the search text.
+  #   chat - the menu closes and the player is told to type
+  #          /ah search <text> (or /ah history <text>). The default.
+  #   sign - a sign editor opens; what the player writes on it is the
+  #          search, exactly like /ah search <text>. Leaving it empty
+  #          goes back to the menu as it was. The sign exists only on
+  #          the player's screen - no block is placed or changed. It
+  #          closes by itself after 60 seconds without an answer.
+  #          Needs Paper or Folia with client-side signs (26.x has them,
+  #          Paper 1.21.1 does not); anywhere else the console says so
+  #          once and chat is used. The lines under the writing line are
+  #          messages.search-sign and messages.history-search-sign.
+  input: chat
+
+# What the sort button shows for each order. Translate freely.
+# Which sort the auction house opens on: newest, oldest, cheapest or
+# expensive - the same four names as under sort-names. An unknown value
+# falls back to newest.
+default-sort: newest
+
+sort-names:
+  newest: 'Newest first'
+  oldest: 'Oldest first'
+  cheapest: 'Cheapest first'
+  expensive: 'Most expensive first'
+
+# How one entry of that list is written inside the SORT button's lore.
+# The browse menu offers %sort_newest%, %sort_oldest%, %sort_cheapest%
+# and %sort_expensive%, each already rendered through one of these two
+# templates - which is what lets the button show the whole list with the
+# active order marked. %sort% is the name from sort-names above.
+sort-line:
+  selected: '&#71F521▶ %sort%'
+  option: '&8▶ &f%sort%'
+
+# What the FILTER button shows for each kind of item. The kinds
+# themselves are fixed - they are decided from the item, not from a list
+# you keep up to date - but every name here is yours to translate.
+#
+#   all       no filter at all
+#   blocks    anything that can be placed
+#   tools     pickaxes, axes, shovels, hoes, shears, rods, buckets
+#   weapons   swords, bows, crossbows, tridents, maces, arrows
+#   armour    helmets, chestplates, leggings, boots, shields, elytra
+#   food      anything edible
+#   potions   potions of every kind, and tipped arrows
+#   books     books, enchanted books, written and writable books
+#   other     everything none of the above caught
+filter-names:
+  all: 'Everything'
+  blocks: 'Blocks'
+  tools: 'Tools'
+  weapons: 'Weapons'
+  armour: 'Armour'
+  food: 'Food'
+  potions: 'Potions'
+  books: 'Books'
+  other: 'Everything else'
+
+# How one entry of that list is written inside the FILTER button's lore -
+# the same idea as sort-line above. %filter% is the name from
+# filter-names.
+filter-line:
+  selected: '&#71F521▶ %filter%'
+  option: '&8▶ &f%filter%'
+
+
+# ---------------------------------------------------------------------
+#  Lore blocks appended to items in the menus
+# ---------------------------------------------------------------------
+# Under each listing in the browse menu.
+# Placeholders: %price% %seller% %remaining%
+listing-lore:
+  - '&f'
+  - '&#6BFF00$%price%'
+  - '&#00B5FF🪓 &fSeller: &#00B5FF%seller%'
+  - '&#FF2121⌚ &fExpiry: &#FF2121%remaining%'
+  - '&e'
+  - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Buy'
+
+# Added on top of the block above, but only under a shulker box - it is
+# the one item whose worth is hidden inside it. Set it to [] to switch
+# the preview hint off; the right-click itself keeps working.
+# Placeholders: %count% how many stacks are in the box
+shulker-lore:
+  - '&#00B5FF▶ &fRight-click: look inside &7(%count%)'
+
+# Added above the block under a shulker box or bundle when a search found
+# the searched item inside it - /ah diamond shows how many diamonds each
+# box holds. Set it to [] to switch it off; the search itself stays.
+# Placeholders: %amount% how many of the item are inside, all slots and
+#               bundles in the box together
+#               %item%   its name, or the search text when several
+#                        different items matched
+contains-lore:
+  - '&#71F521✔ &fContains &#71F521%amount%x %item%'
+
+# Under each of your own listings in the My Items menu.
+# Placeholders: %price% %remaining%
+mine-lore:
+  - '&f'
+  - '&fPrice: &#6BFF00$%price%'
+  - '&#FF2121⌚ &fExpiry: &#FF2121%remaining%'
+  - '&e'
+  - '&#FFD900&l▶ &#FFD900&l&nCLICK&#FFD900 to Cancel'
+
+# Under each entry in the transaction history.
+# Placeholders: %price% %seller% %buyer% %date%
+history-lore:
+  - '&f'
+  - '&#6BFF00$%price%'
+  - '&#00B5FF🪓 &fSeller: &#00B5FF%seller%'
+  - '&#FFD900⚲ &fBuyer: &#FFD900%buyer%'
+  - '&#AEADAD⚑ &fSale date: &#AEADAD%date%'
+
+
+# ---------------------------------------------------------------------
+#  Messages - '' switches a line off
+# ---------------------------------------------------------------------
+messages:
+
+  # %item% %price%
+  listed: '&#71F521You listed &f%item% &#71F521for &f$%price%&#71F521!'
+
+  # Broadcast to everyone without the mute permission. %player% %item% %price%
+  listed-broadcast: '&f%player% &7listed &f%item% &7for &#71F521$%price%&7!'
+
+  # %item% %price% %seller%
+  bought: '&#71F521You bought &f%item% &#71F521for &f$%price%&#71F521!'
+
+  # %item% %price% %player% (the buyer)
+  # %net% is what actually reached the seller and %fee% what the house
+  # kept - both equal to %price% and 0 while listings.fee-percent is 0.
+  sold: '&#71F521%player% &fbought your %item% &ffor &#71F521$%net%&f!'
+
+  # %item%
+  cancelled: '&#FF2121Auction cancelled. &fItem returned!'
+
+  # %item%
+  expired-returned: '&#FF2121Your auction &f%item% &#FF2121expired and was returned!'
+
+  returns-delivered: '&fYour expired auction items were returned!'
+
+  listing-gone: '&#FF2121This auction is no longer available!'
+
+  own-listing: "&#FF2121You can't buy your own item!"
+
+  # Staff clean-up grip, shift-left-click in the auction house.
+
+  # Needs auction.admin.remove. The first click only arms it, the
+
+  # second removes; the goods go back to the seller.
+
+  admin-remove-confirm: '&eShift-click again to remove &f%item%&e by &f%player%&e.'
+
+  admin-removed: '&aListing removed: &f%item%&a by &f%player%&a - returned to the seller.'
+
+  admin-removed-yours: '&eYour listing &f%item%&e was removed by staff and is waiting for you to collect.'
+
+  # %price%
+  cannot-afford: "&#FF2121You don't have enough money! &7(Price: $%price%)"
+
+  # %max%
+  too-many-listings: '&#FF2121You can only sell &f%max% &#FF2121items at once!'
+
+  # %min% / %max%
+  price-too-low: '&#FF2121The minimum price is &f$%min%&#FF2121.'
+  price-too-high: '&#FF2121The maximum price is &f$%max%&#FF2121.'
+
+  nothing-in-hand: '&#FF2121Hold the item you want to sell!'
+
+  # %item% - the item is on listings.blacklist and stays in the hand.
+  blacklisted: '&#FF2121%item% cannot be sold on the auction house!'
+
+  # CANCEL on the listing confirmation. Nothing left the hand.
+  listing-aborted: '&#FF2121Nothing listed. &fYou kept the item!'
+
+  # CONFIRM on the listing confirmation, but the hand no longer holds
+  # what it held when the screen opened. Refused rather than guessed.
+  hand-changed: '&#FF2121You are not holding that item any more!'
+
+  # Shown when an item could not be stored and was handed straight back.
+  # In practice you will never see this - it exists so that a listing which
+  # would not survive a restart is refused instead of quietly created.
+  listing-failed: '&#FF2121That item could not be listed - you still have it.'
+
+  sell-usage: '&fUse &#71F521/ah sell <price>&f! Suffixes work: 5k, 2.5m'
+
+  search-usage: '&fUse &#71F521/ah search <text> [stack] [shulker]&f!'
+
+  # Shown when the search button in the menu is clicked.
+  search-hint: '&fType &#71F521/ah search <text> &fto filter the auction house. Add &#71F521stack &for &#71F521shulker &fat the end for full stacks or shulker boxes only.'
+
+  history-search-usage: '&fUse &#71F521/ah history <text>&f!'
+
+  # Shown when the search button in the transactions menu is clicked.
+  history-search-hint: '&fType &#71F521/ah history <text> &fto filter your transactions.'
+
+  # search.input: sign - the three lines under the empty line the player
+  # writes on, for the auction house and for the transactions menu. The
+  # sign editor shows them without colours. A line the player leaves
+  # unchanged is not part of the search.
+  search-sign:
+    - '^^^^^^^^^^^^^^^'
+    - 'Search the AH'
+    - 'Empty = back'
+  history-search-sign:
+    - '^^^^^^^^^^^^^^^'
+    - 'Search history'
+    - 'Empty = back'
+
+  view-usage: '&fUse &#71F521/ah view <player>&f!'
+
+  # %player%
+  view-empty: '&#FF2121%player% has nothing on the auction house!'
+
+  no-economy: '&#FF2121No economy plugin is installed - nothing can be bought or sold.'
+
+  # The economy turned a payment down - EssentialsX does that above
+  # max-money, for example. %reason% is what the economy said.
+  economy-refused: '&#FF2121The economy refused the payment: &f%reason%'
+
+  # The buyer paid, but the economy would not pay the seller (the seller
+  # is at the balance limit, for example). The purchase is undone: the
+  # item stays listed and the buyer has the money back. %reason%
+  seller-payment-refused: '&#FF2121The economy refused the payment to the seller: &f%reason%&#FF2121. Nothing was bought, your money is back.'
+
+  # /ah reload - needs auction.reload, works from the console too.
+  # %listings% is how many auctions are running afterwards.
+  # Re-reads this file and the six menu files. Listings, parked returns and
+  # the history are NOT re-read: they hold items and money, and the storage
+  # block, the save interval and history.entries-per-player need a restart.
+  reloaded: '&#71F521Reloaded. &f%listings% &#71F521active listings.'
+
+  no-permission: "&#FF2121You don't have permission to do that!"
+
+  # /ah help. "stack" and "shulker" are the search switches described
+  # under search: above.
+  help: '&f/ah &7browse &8| &f/ah sell <price> &8| &f/ah search <text> [stack] [shulker] &8| &f/ah view <player> &8| &f/ah history'
